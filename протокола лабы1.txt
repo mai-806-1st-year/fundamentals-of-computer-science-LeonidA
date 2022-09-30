@@ -1,0 +1,62 @@
+leniksss@DESKTOP-DOSN16T:~$ date
+Fri Sep 30 18:44:47 MSK 2022
+leniksss@DESKTOP-DOSN16T:~$ who
+leniksss@DESKTOP-DOSN16T:~$ whoami
+leniksss
+leniksss@DESKTOP-DOSN16T:~$ pwd
+/home/leniksss
+leniksss@DESKTOP-DOSN16T:~$ ls -a -l
+total 36
+drwxr-xr-x 5 leniksss leniksss 4096 Sep 30 18:43 .
+drwxr-xr-x 3 root     root     4096 Sep  9 22:35 ..
+-rw------- 1 leniksss leniksss  683 Sep 10 13:53 .bash_history
+-rw-r--r-- 1 leniksss leniksss  220 Sep  9 22:35 .bash_logout
+-rw-r--r-- 1 leniksss leniksss 3771 Sep  9 22:35 .bashrc
+drwxr-xr-x 2 leniksss leniksss 4096 Sep  9 22:35 .landscape
+drwxr-xr-x 3 leniksss leniksss 4096 Sep 10 13:10 .local
+-rw-r--r-- 1 leniksss leniksss    0 Sep 30 15:26 .motd_shown
+-rw-r--r-- 1 leniksss leniksss  807 Sep  9 22:35 .profile
+-rw-r--r-- 1 leniksss leniksss    0 Sep 30 15:27 .sudo_as_admin_successful
+drwxr-xr-x 2 leniksss leniksss 4096 Sep 10 13:33 test
+leniksss@DESKTOP-DOSN16T:~$ mkdir lab1
+leniksss@DESKTOP-DOSN16T:~$ cd lab1
+leniksss@DESKTOP-DOSN16T:~/lab1$ pwd
+/home/leniksss/lab1
+leniksss@DESKTOP-DOSN16T:~/lab1$ cd -
+/home/leniksss
+leniksss@DESKTOP-DOSN16T:~$ cd lab1
+leniksss@DESKTOP-DOSN16T:~/lab1$emacs
+имя файла - f1_lab
+leniksss@DESKTOP-DOSN16T:~/lab1$ cat f1_lab
+asdafafsaf
+as
+fasfafs
+af
+afs
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+leniksss@DESKTOP-DOSN16T:~/lab1$ cd -
+/home/leniksss
+leniksss@DESKTOP-DOSN16T:~$ cp lab1/f1_lab f2_lab
+leniksss@DESKTOP-DOSN16T:~$ ls -a
+.  ..  .bash_history  .bash_logout  .bashrc  .landscape  .local  .motd_shown  .profile  .sudo_as_admin_successful  f2_lab  lab1  test
+leniksss@DESKTOP-DOSN16T:~$ cat f2_lab
+asdafafsaf
+as
+fasfafs
+af
+afs
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+leniksss@DESKTOP-DOSN16T:~$ cd lab1
+leniksss@DESKTOP-DOSN16T:~/lab1$ cd -a
+-bash: cd: -a: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+leniksss@DESKTOP-DOSN16T:~/lab1$ ls -a
+.  ..  f1_lab
+leniksss@DESKTOP-DOSN16T:~/lab1$ rm f1_lab
+leniksss@DESKTOP-DOSN16T:~/lab1$ ls -a
+.  ..
+leniksss@DESKTOP-DOSN16T:~/lab1$ cd -
+/home/leniksss
+leniksss@DESKTOP-DOSN16T:~$ rmdir lab1
+leniksss@DESKTOP-DOSN16T:~$ ls -a
+.  ..  .bash_history  .bash_logout  .bashrc  .landscape  .local  .motd_shown  .profile  .sudo_as_admin_successful  f2_lab  test

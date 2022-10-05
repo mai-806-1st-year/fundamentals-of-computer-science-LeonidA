@@ -1,0 +1,15 @@
+00, ,&,chg
+
+chg,&,<,chg chg,1,!,rght_1 chg,0,*,rght_0 chg, ,>,del_&
+
+rght_1,*,>,rght_1 rght_1,!,>,rght_1 rght_1,1,>,rght_1 rght_1,0,>,rght_1 rght_1,&,>,rght_1 rght_1, ,1,lft
+
+rght_0,*,>,rght_0 rght_0,!,>,rght_0 rght_0,1,>,rght_0 rght_0,0,>,rght_0 rght_0,&,>,rght_0 rght_0, ,0,lft
+
+lft,1,<,lft lft,0,<,lft lft,&,<,lft lft,!,1,lft_stp lft,*,0,lft_stp
+
+lft_stp,1,<,chg lft_stp,0,<,chg
+
+del_&,1,>,del_& del_&,0,>,del_& del_&,&, ,del_& del_&, ,>,fin
+
+fin,1,>,fin fin,0,>,fin fin, ,#,fin

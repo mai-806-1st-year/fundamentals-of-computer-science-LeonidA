@@ -2,9 +2,9 @@
 
 chg,&,<,chg chg,1,!,rght_1 chg,0,*,rght_0 chg, ,>,del_&
 
-rght_1,*,>,rght_1 rght_1,!,>,rght_1 rght_1,1,>,rght_1 rght_1,0,>,rght_1 rght_1,&,>,rght_1 rght_1, ,1,lft
+rght_1,!,>,rght_1 rght_1,1,>,rght_1 rght_1,0,>,rght_1 rght_1,&,>,rght_1 rght_1, ,1,lft
 
-rght_0,*,>,rght_0 rght_0,!,>,rght_0 rght_0,1,>,rght_0 rght_0,0,>,rght_0 rght_0,&,>,rght_0 rght_0, ,0,lft
+rght_0,*,>,rght_0 rght_0,1,>,rght_0 rght_0,0,>,rght_0 rght_0,&,>,rght_0 rght_0, ,0,lft
 
 lft,1,<,lft lft,0,<,lft lft,&,<,lft lft,!,1,lft_stp lft,*,0,lft_stp
 

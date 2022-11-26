@@ -8,32 +8,40 @@ typedef struct
     bool condition;
 } Tuple;
 
+typedef enum 
+{
+    SPACE = 1,
+    SIGN,
+    END,
+    NEW_STRING
+} Way;
+
 Tuple logic(char symbol, bool condition)
 {   
-    int way;
+    Way way;
     char new_symbol, func_symbol = symbol;
     Tuple result;
     bool func_condition = condition;
     
     if (func_symbol == 32){ // пробел
-        way = 1;
+        way = SPACE;
     }
 
     if (func_symbol == 47){ // знак /
-        way = 2;
+        way = SIGN;
     }
 
     if (func_symbol == EOF){
-        way = 3;
+        way = END;
     }
 
     if (func_symbol == 10){ // знак n
-        way = 4;
+        way = NEW_STRING;
     }
     
     switch (way)
     {
-    case 1:
+    case SPACE:
         if (func_condition == true){
             result.code = 1;
             result.condition = true;
@@ -44,7 +52,7 @@ Tuple logic(char symbol, bool condition)
         result.condition = false;
         return result;
     
-    case 2:
+    case SIGN:
         new_symbol = getchar();
         if (new_symbol == 47) {
             result.code = 1;
@@ -56,12 +64,12 @@ Tuple logic(char symbol, bool condition)
         result.condition = false;
         return result;
     
-    case 3:
+    case END:
         result.code = 2;
         result.condition = false;
         return result;
     
-    case 4:
+    case NEW_STRING:
         result.code = 0;
         result.condition = false;
         return result;

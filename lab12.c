@@ -3,7 +3,7 @@
 #include <string.h>
 
 void main() {
-    char symbol, number[11] = "";
+    char symbol, number[12] = "";
     symbol = getchar();
 
     while (symbol != EOF)
@@ -13,12 +13,27 @@ void main() {
     }
     int size = strlen(number);
     
-    if (size % 2 != 1)
+    if (number[0] == 45) {
+        size -= 1;
+        if (size % 2 != 1)
     {
-        size = (size / 2) - 1;
+        size = size / 2;
         memmove(&number[size], &number[size + 1], strlen(number) - size);
     }
     
     printf("%s", number);
+
+    }
+    
+    else {
+    if (size % 2 != 1)
+    
+    {
+    size = (size / 2) - 1;
+    memmove(&number[size], &number[size + 1], strlen(number) - size);
+    }
+    
+    printf("%s", number);
+    };
     getch();
 }

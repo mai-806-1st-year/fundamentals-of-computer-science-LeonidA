@@ -106,4 +106,5 @@ void main()
         
     }
     printf("%d", counter);
+    getch();
 }
